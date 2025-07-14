@@ -2,7 +2,9 @@
   width: 100vw;
   height: 450px;
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* position: relative; */
   user-select: none;
   transition: .5s;
 
@@ -82,4 +84,8 @@
   to {
     translate: -150px 0;
   }
+}
+
+@media (min-width: 576px) {
+
 }

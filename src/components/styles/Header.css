@@ -1,10 +1,45 @@
 .parent {
   display: flex;
+  flex-direction: row-reverse;
   position: fixed;
   top: 0;
   z-index: 1;
   user-select: none;
   cursor: pointer;
+  width: 100vw;
+  height: 75px;
+  translate: -50px 10px;
+
+  .menu {
+    translate: 0 30px;
+
+    &.x {
+      .one {
+        translate: 0 10px;
+        animation: x-one .5s forwards;
+      }
+
+      .two {
+        animation: x-two .5s forwards;
+      }
+
+      .three {
+        animation: x-three .5s forwards;
+      }
+    }
+
+    > .line {
+      background-color: #000;
+      height: 5px;
+      width: 30px;
+      border-radius: 10px;
+
+      &.one,
+      &.two {
+        margin-bottom: 5px;
+      }
+    }
+  }
 
   .logo {
     position: absolute;
@@ -37,6 +72,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    transition: transform .5s;
 
     .header-text {
       font-size: 11.5pt;
@@ -48,5 +84,30 @@
         text-wrap: nowrap;
       }
     }
+  }
+}
+
+@keyframes x-one {
+  to {
+    rotate: -45deg;
+  }
+}
+
+@keyframes x-two {
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes x-three {
+  to {
+    rotate: 45deg;
+  }
+}
+
+@media (max-width: 730px) {
+  .header-flex {
+    transform: rotateX(90deg);
   }
 }

@@ -43,3 +43,9 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 730px) {
+  .latest-articles-container {
+    translate: 0 1000px;
+  }
+}
