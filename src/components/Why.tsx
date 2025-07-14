@@ -10,7 +10,7 @@ const Why: React.FC<WhyProps> = (props: WhyProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => document.addEventListener("scroll", () => setYPosition(scrollY)));
-  const [width, setWidth] = useState<number>(1000);
+  const [_width, setWidth] = useState<number>(1000);
 
   window.addEventListener("resize", () => setWidth(innerWidth));
   if (ref.current) {
