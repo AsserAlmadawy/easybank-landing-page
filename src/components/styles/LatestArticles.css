@@ -1,0 +1,45 @@
+.latest-articles-container {
+  position: relative;
+  top: 800px;
+  left: 0;
+  user-select: none;
+
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
+
+  .latest-articles {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    opacity: 0;
+
+    &.active-articles {
+      animation: appearing 1s linear forwards;
+    }
+  }
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .25;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  75% {
+    opacity: .75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,46 @@
+.why-container {
+  position: absolute;
+  top: 700px;
+  left: 100px;
+  display: flex;
+  user-select: none;
+
+  p {
+    opacity: 0.4;
+    font-weight: bold;
+  }
+
+  .why-parts {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    display: flex;
+    opacity: 0;
+
+    &.active {
+      animation: appear 1s linear forwards;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .25;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  75% {
+    opacity: .75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

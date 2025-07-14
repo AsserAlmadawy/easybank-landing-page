@@ -1,0 +1,135 @@
+:root {
+  --icon-width: 25px;
+  --icon-height: 25px;
+  --cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  width: 100vw;
+  height: 200px;
+  background-color: rgb(40, 40, 109);
+  color: #fff;
+  top: 1850px;
+  left: 0;
+  user-select: none;
+
+  .logo {
+    position: inherit;
+    top: 50px;
+    left: 150px;
+    cursor: var(--cursor);
+  }
+
+  .about-us {
+    position: inherit;
+    top: 50px;
+    left: 400px;
+    cursor: var(--cursor);
+  }
+
+  .careers {
+    position: inherit;
+    top: 50px;
+    left: 650px;
+    cursor: var(--cursor);
+  }
+
+  .contact {
+    position: inherit;
+    top: 100px;
+    left: 400px;
+    cursor: var(--cursor);
+  }
+
+  .support {
+    position: inherit;
+    top: 100px;
+    left: 650px;
+    cursor: var(--cursor);
+  }
+
+  .facebook {
+    position: inherit;
+    width: 20px;
+    height: 20px;
+    cursor: var(--cursor);
+    top: 150px;
+    left: 150px;
+  }
+
+  .youtube {
+    position: inherit;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    cursor: var(--cursor);
+    top: 150px;
+    left: 185px;
+  }
+
+  .twitter {
+    position: inherit;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    cursor: var(--cursor);
+    top: 150px;
+    left: 220px;
+  }
+
+  .pinterest {
+    position: inherit;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    cursor: var(--cursor);
+    top: 150px;
+    left: 255px;
+  }
+
+  .instagram {
+    position: inherit;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    cursor: var(--cursor);
+    top: 150px;
+    left: 290px;
+  }
+
+  .blog {
+    position: inherit;
+    cursor: var(--cursor);
+    top: 150px;
+    left: 400px;
+  }
+
+  .privacy-policy {
+    position: inherit;
+    cursor: var(--cursor);
+    top: 150px;
+    left: 650px;
+  }
+
+  .copyright {
+    position: inherit;
+    opacity: 0.5;
+    right: 35px;
+    bottom: 25px;
+  }
+
+  .footer-button {
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 255, 0, 0.65),
+      rgb(0, 191, 255, 0.75)
+    );
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    right: 50px;
+    top: 50px;
+    cursor: var(--cursor);
+  }
+}

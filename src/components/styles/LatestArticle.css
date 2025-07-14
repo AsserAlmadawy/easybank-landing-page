@@ -1,0 +1,23 @@
+.latest-article {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  text-wrap: balance;
+
+  p {
+    opacity: 0.4;
+  }
+
+  img {
+    width: 250px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .author {
+    opacity: 0.4;
+    margin-bottom: 10px;
+  }
+}
