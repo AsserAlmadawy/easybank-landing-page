@@ -45,7 +45,7 @@
 
       .front-image {
         z-index: -1;
-        background-image: url(images/image-mockups.png);
+        background-image: url("images/image-mockups.png");
         background-repeat: no-repeat;
         background-size: 800px 1000px;
         width: 800px;
@@ -62,7 +62,7 @@
         position: absolute;
         width: 625px;
         height: 625px;
-        background-image: url(icons/bg-intro-desktop.svg);
+        background-image: url("icons/bg-intro-desktop.svg");
         background-repeat: no-repeat;
         background-size: 967px;
         top: 32px;
